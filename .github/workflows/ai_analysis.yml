@@ -20,7 +20,8 @@ jobs:
           python-version: "3.9"
 
       - name: Install dependencies
-        run: pip install fastapi pandas openai requests uvicorn
+        run: |
+          pip install fastapi uvicorn pandas openai requests python-multipart
 
       - name: Run AI analysis
         run: python app.py
