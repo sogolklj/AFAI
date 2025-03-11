@@ -1,0 +1,33 @@
+name: AI AF Management Plan
+
+on:
+  push:
+    paths:
+      - "uploads/*.xlsx"  # Runs when a new Excel file is added
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  analyze_af_management:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: pip install fastapi pandas openai requests uvicorn
+
+      - name: Run AI analysis
+        run: python app.py
+
+      - name: Save AI results
+        run: |
+          echo "AF Management Plan Generated" > results.txt
+          git add results.txt
+          git commit -m "Updated AI analysis results"
+          git push

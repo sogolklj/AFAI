@@ -8,7 +8,7 @@ import io
 app = FastAPI()
 
 # OpenAI API Key (Set in GitHub Secrets)
-OPENAI_API_KEY = "your_api_key_here"
+OPENAI_API_KEY = "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"
 
 # JSON File URLs (Stored in GitHub)
 JSON_URLS = {
