@@ -140,7 +140,7 @@
                 ]
             },
             "combination_therapy_considerations": {
-                "if_max_dosage_reached_and_still_symptomatic": "Consider adding the next class of medication at the lowest dose."
+                "if_max_dosage_reached_and_still_symptomatic": "Do not add the next group medication when the highest dose of the first medication has not been given yet."
             },
             "medication_dosage_restriction": "GPT should only provide medication dosages listed in this document."
         }
