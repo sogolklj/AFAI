@@ -1,0 +1,87 @@
+{
+  "summary": {
+    "demographics": {
+      "age": "",
+      "sex": ""
+    },
+    "past_medical_history": [],
+    "type_of_AF": ""
+  },
+  "symptoms_and_EHRA_score": {
+    "palpitation": {
+      "severity": "",
+      "burden": ""
+    },
+    "shortness_of_breath": {
+      "severity": "",
+      "burden": ""
+    },
+     "EHRA_score": "",
+    "other_symptoms": {
+      "dizziness": "",
+      "fatigue": "",
+      "chest_pain": ""
+    },
+    "red_flags": []
+  },
+  "vital_signs_and_investigations": {
+    "heart_rate": {
+      "average": "",
+      "ECG_based": "",
+      "Holter_based": ""
+    },
+    "blood_pressure": "",
+    "ECG_findings": {
+      "AF_type": "",
+      "rate": "",
+      "conduction_abnormalities": ""
+    },
+    "Holter_summary": {
+      "max_HR": "",
+      "min_HR": "",
+      "pauses": "",
+      "arrhythmia_episodes": ""
+    },
+    "echocardiography_findings": {
+      "LVEF": "",
+      "atrial_size": ""
+    },
+    "blood_tests": {
+      "Hb": "",
+      "platelets": "",
+      "renal_function": "",
+      "electrolytes": ""
+    }
+  },
+  "missing_information": [],
+  "management_plan": {
+    "anticoagulation": {
+      "CHA2DS2_VA_score": "",
+      "strategy": ""
+    },
+    "rate_control": {
+      "current_condition": "",
+      "symptoms_and_HR_data": "",
+      "monitoring_plan": ""
+    },
+    "rhythm_control": {
+      "current_condition": "",
+      "positive_negative_factors": "",
+      "cardioversion_consideration": ""
+    },
+    "medications_and_adjustments": {
+      "columns": ["Medication", "Current Dosage", "Recommended Dosage", "Reason for Change"],
+      "rows": [
+        {"medication": "", "current_dosage": "", "recommended_dosage": "", "reason_for_change": ""}
+      ]
+    },
+    "considerations_for_medications": "",
+    "ablation_or_cardioversion": "",
+    "lifestyle_and_general_recommendations": ""
+  },
+  "follow_up": {
+    "next_visit": "",
+    "monitoring": [],
+    "red_flag_plan": []
+  }
+}
