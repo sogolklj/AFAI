@@ -1,0 +1,28 @@
+{
+  "required_parameters": {
+    "ECG": [
+      "Latest ECG date", 
+      "ECG rate", 
+      "ECG rhythm", 
+      "PR interval (type I or Iia or Iib or III block)", 
+      "QRS duration (RBBB or LBBB)", 
+      "QTc"
+    ],
+    "Holter_ECG": [
+      "Latest Holter ECG date", 
+      "Holter ECG Rhythm", 
+      "Holter ECG Lowest rate", 
+      "Holter ECG Highest rate", 
+      "Holter ECG Average rate", 
+      "Slow AF during Holter ECG", 
+      "Pauses during Holter ECG"
+    ],
+    "Echocardiography": [
+      "Latest echo date", 
+      "LVEF", 
+      "LA diameter", 
+      "LA volume index"
+    ]
+  },
+  "check_parameters": "function(patient_data) {     let missing_parameters = {};     let required_tests = [];     for (let test in this.required_parameters) {       if (!(test in patient_data) || patient_data[test] === 'no test performed') {         required_tests.push(test);       } else {         missing_parameters[test] = this.required_parameters[test].filter(param =>           !(param in patient_data[test]) || patient_data[test][param] === 'not available'         );       }     }     let response = {};     if (required_tests.length > 0) {       response['required_tests'] = 'Please perform the following tests as soon as possible: ' + required_tests.join(', ');     }     for (let test in missing_parameters) {       if (missing_parameters[test].length > 0) {         response[test] = 'Please provide the following missing data: ' + missing_parameters[test].join(', ');       }     }     return response;   }"
+}

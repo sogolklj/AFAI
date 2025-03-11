@@ -1,0 +1,26 @@
+{
+    "education": "Education directed to patients, family members, caregivers, and healthcare professionals is recommended to optimize shared decision-making, facilitating open discussion of both the benefit and risk associated with each treatment option.",
+    "comorbidities_management": {
+        "heart_failure": {
+            "diuretics": "Recommended in patients with AF, HF, and congestion to alleviate symptoms and facilitate better AF management.",
+            "medical_therapy": "Appropriate medical therapy for HF is recommended in AF patients with HF and impaired LVEF to reduce symptoms and/or HF hospitalization and prevent AF recurrence.",
+            "SGLT2_inhibitors": "Recommended for patients with HF and AF regardless of left ventricular ejection fraction to reduce the risk of HF hospitalization and cardiovascular death."
+        },
+        "diabetes": {
+            "glycaemic_control": "Effective glycaemic control is recommended as part of comprehensive risk factor management in individuals with diabetes mellitus and AF, to reduce burden, recurrence, and progression of AF."
+        },
+        "hypertension": {
+            "BP_treatment": "Blood pressure lowering treatment is recommended in patients with AF and hypertension to reduce recurrence and progression of AF and prevent adverse cardiovascular events."
+        },
+        "obstructive_sleep_apnoea": {
+            "screening": "Using only symptom-based questionnaires for screening OSA in individuals with AF is not recommended.",
+            "management": "Management of OSA may be considered as part of comprehensive risk factor management in individuals with AF to reduce recurrence and progression."
+        }
+    },
+    "overweight_management": {
+        "weight_loss": "Recommended as part of comprehensive risk factor management in overweight and obese individuals with AF to reduce symptoms and AF burden, with a target of 10% or more reduction in body weight.",
+        "bariatric_surgery": "May be considered in conjunction with lifestyle changes and medical management in individuals with AF and BMI \u226540 kg/m\u00b2 where a rhythm control strategy is planned, to reduce recurrence and progression of AF."
+    },
+    "tailored_exercise": "A tailored exercise programme is recommended in individuals with paroxysmal or persistent AF to improve cardiorespiratory fitness and reduce AF recurrence.",
+    "alcohol_reduction": "Reducing alcohol consumption to \u22643 standard drinks (\u226430 grams of alcohol) per week is recommended as part of comprehensive risk factor management to reduce AF recurrence."
+}

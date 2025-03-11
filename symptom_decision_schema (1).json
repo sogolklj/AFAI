@@ -1,0 +1,114 @@
+{
+    "symptom_assessment": {
+        "step_1": {
+            "understanding_AF_relation": {
+                "palpitation": {
+                    "paroxysmal_AF": {
+                        "criteria": [
+                            "AF related if: palpitating with or without shortness of breath and dizziness occurring at any time except when standing up quickly.",
+                            "If palpitations ONLY occur when standing up quickly with or without dizziness, they are NOT AF-related."
+                        ]
+                    },
+                    "persistent_AF": {
+                        "criteria": [
+                            "Palpitation and shortness of breath should be considered AF-related until the oposite is proven"
+                        ]
+                    },
+                    "emotional_stress_palpitation": {
+                        "criteria": {
+                            "if_concomitant_with_AF_rhythm_in_Holter": "Treat as AF-related symptom.",
+                            "if_NOT_concomitant_with_AF_but_fast_ventricular_response_in_Holter": "It is NOT AF-related and is emotional.",
+                            "if_no_Holter_available": [
+                                "Refer for urgent Holter.",
+                                "Temporarily treat with low-dose medication for AF."
+                            ]
+                        }
+                    }
+                },
+                "dizziness": {
+                    "contextual_interpretation": {
+                        "positional_with_palpitations_or_SOB": {
+                            "classification": "Orthostatic Hypotension",
+                            "management": {
+                                "if_severe_or_with_fainting": [
+                                    "Reduce hypotensive medications like Entresto.",
+                                    "As a last step, consider reducing Beta-blockers and Diltiazem."
+                                ],
+                                "if_mild_to_moderate": [
+                                    "No change in medications.",
+                                    "Increase fluid intake.",
+                                    "Increase salt intake."
+                                ]
+                            }
+                        },
+                        "reported_with_slow_heart_activity_irregular_heartbeat_or_pauses": {
+                            "classification": "AF-related dizziness",
+                            "if_concomitant_with_slow_AF_or_pauses_in_Holter_or_monitor": {
+                                "extremely_limiting_activity": [
+                                    "PPM and AV node ablation most likely needed.",
+                                    "Stop Beta-blockers, Calcium channel blockers, Digoxin, Propafenone, and Amiodarone."
+                                ],
+                                "somewhat_affecting_activity": [
+                                    "Consider PPM and AV node ablation.",
+                                    "Reduce Beta-blockers.",
+                                    "Stop Calcium channel blockers, Digoxin, Propafenone, and Amiodarone."
+                                ]
+                            },
+                            "if_no_Holter_available": {
+                                "action": "Request urgent Holter.",
+                                "management_based_on_activity_limitation": {
+                                    "extremely_affecting_activity": "Reduce Beta-blockers, CCB, and Digoxin if resting HR <110.",
+                                    "slightly_to_somewhat_limiting_activity": "Consider reducing Beta-blockers, CCB, and Digoxin if resting HR <110."
+                                }
+                            }
+                        },
+                        "both_positional_and_AF_related_dizziness_present": {
+                            "rule": "Both causes should be reported and managed accordingly.",
+                            "management": {
+                                "orthostatic_hypotension": "Follow orthostatic hypotension management rules.",
+                                "AF_related": "Follow AF-related dizziness management rules."
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "step_2": {
+            "severity_and_response_scoring": {
+                "progression": {
+                    "severe": "Palpitation or SOB are ongoing, worsening, or new.",
+                    "moderate": "Palpitation and SOB are unchanged from two weeks ago.",
+                    "mild": "Palpitation and SOB are improving."
+                },
+                "burden": {
+                    "severe": {
+                        "criteria": [
+                            "Palpitation and SOB occur daily, most of the last two weeks, or several times in the last two weeks.",
+                            "AF heart fluttering, skipping, or racing occurs daily, most of the last two weeks, or several times in the last two weeks.",
+                            "Episodes of slow heart activity, irregular heartbeat, or pauses occur daily, most of the last two weeks, or several times in the last two weeks."
+                        ]
+                    },
+                    "moderate": {
+                        "criteria": [
+                            "Palpitation and SOB occurred once in the last two weeks or once in the last month.",
+                            "AF heart fluttering, skipping, or racing occurred once in the last two weeks or once in the last month.",
+                            "Episodes of slow heart activity, irregular heartbeat, or pauses occurred once in the last two weeks or once in the last month."
+                        ]
+                    },
+                    "mild": {
+                        "criteria": [
+                            "Palpitation and SOB occurred a few times in the last couple of months.",
+                            "AF heart fluttering, skipping, or racing occurred a few times in the last couple of months.",
+                            "Episodes of slow heart activity, irregular heartbeat, or pauses occurred a few times in the last couple of months."
+                        ]
+                    }
+                },
+                "limitation_on_physical_activity": {
+                    "extreme_or_severe": "Average EHRA score between 2-3.",
+                    "moderate": "Average EHRA score between 1-2.",
+                    "mild": "Average EHRA score between 0-1."
+                }
+            }
+        }
+    }
+}

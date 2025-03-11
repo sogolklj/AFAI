@@ -1,0 +1,82 @@
+{
+    "rhythm_control_strategy": {
+        "decision_tree": {
+            "is_rhythm_control_required": {
+                "positive_factors": [
+                    "Young age",
+                    "Severe symptomatic",
+                    "History of heart failure or LVEF < 45% in echocardiogram",
+                    "Ongoing and progression in palpitation and limiting daily activities",
+                    "Active lifestyle",
+                    "Paroxysmal AF",
+                    "Smaller left atrial size in echocardiogram"
+                ],
+                "negative_factors": [
+                    "Advanced age",
+                    "Asymptomatic or minimally symptomatic",
+                    "Preserved heart function",
+                    "Sedentary lifestyle",
+                    "Significant LA enlargement in echocardiogram"
+                ]
+            }
+        },
+        "persistent_AF": {
+            "cardioversion": {
+                "pharmacological": true,
+                "electrical": true
+            },
+            "medications": {
+                "temporal_control_mechanisms": "Only regular treatment",
+                "specific_therapy": {
+                    "structurally_normal_heart": [
+                        "Class Ic (Flecainide, Propafenone) - Avoid if CAD or eGFR < 35"
+                    ],
+                    "structurally_abnormal_heart": [
+                        "Sotalol (Class IIb, not suitable for LVEF < 40%)",
+                        "Amiodarone (QTc check required, better to be avoided if QTc prolonged)",
+                        "Dronedarone (QTc check required, better to be avoided if QTc prolonged)"
+                    ]
+                }
+            },
+            "ablation": "Only Class IIb recommendation for persistent AF",
+            "permanent_AF": {
+                "treatment_pathway": "AV node ablation + CRT or pacemaker implantation, no catheter ablation"
+            }
+        },
+        "paroxysmal_AF": {
+            "temporal_control_mechanisms": {
+                "pill_in_pocket (PIP)": "Palpitations occur less than a few times a week, longer duration of palpitation",
+                "regular_treatment": [
+                    "If palpitations occur most days of the week, regular treatment",
+                    "Regular treatment + Pill-In-Pocket"
+                ]
+            },
+            "medications": {
+                "specific_therapy": {
+                    "structurally_normal_heart": [
+                        "Class Ic (Flecainide, Propafenone) - Avoid if CAD or eGFR < 35, sinus node dysfunction, atrioventricular block (type I, II, or III), or Brugada syndrome based on data from ECG in patient data"
+                    ],
+                    "structurally_abnormal_heart": [
+                        "Sotalol (Class IIb, not suitable for LVEF < 40%)",
+                        "Amiodarone (QTc check required, better to be avoided if QTc prolonged)",
+                        "Dronedarone with mild structural heart disease (QTc check required, avoid if QTc>500, sinus node dysfunction, atrioventricular block (type I, II, or III) based on ECG data provided in patient data)"
+                    ]
+                }
+            },
+            "ablation": "Class I recommendation for paroxysmal AF"
+        },
+        "weighting_notes": {
+            "temporal_strategy": {
+                "amiodarone": "Not suitable for PIP strategy",
+                "sotalol": "Moderately suitable for PIP strategy",
+                "flecainide": "Very much suitable for PIP strategy"
+            },
+            "specific_arrhythmia_patterns": "Consider ablation earlier if: patient preference, AAD ineffective or poorly tolerated, younger, heart failure, progressive disease (more frequent/longer paroxysms), concomitant AF and flutter, pauses at termination of AF"
+        },
+        "additional_notes": {
+            "parallel_strategies": "Rate control and rhythm control are parallel strategies until near-perfect rhythm control is achieved",
+            "anticoagulation_for_ablation": "Minimum 1 month before and 3 months after if not already on it",
+            "anticoagulation_for_cardioversion": "If AF onset is unclear or >24hrs, a minimum of 1 month of anticoagulation or TOE-guidance is required"
+        }
+    }
+}

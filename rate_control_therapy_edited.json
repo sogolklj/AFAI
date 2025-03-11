@@ -1,0 +1,148 @@
+{
+    "rate_control_therapy": {
+        "medication_groups": {
+            "beta_blocker": {
+                "description": "First-line choice if patient is not on any rate-controlling medication and does not have severe asthma or COPD.",
+                "medications": {
+                    "Bisoprolol": {
+                        "initial_dosage": "1.25 mg",
+                        "dosage_range": [
+                            "1.25 mg",
+                            "2.5 mg",
+                            "3.75 mg",
+                            "5 mg",
+                            "7.5 mg",
+                            "10 mg"
+                        ],
+                        "max_dosage": "10 mg",
+                        "usual_dosage": "5 mg",
+                        "frequency": "Once a day or divided twice a day"
+                    },
+                    "Metoprolol": {
+                        "initial_dosage": "25 mg",
+                        "dosage_range": [
+                            "25 mg",
+                            "50 mg",
+                            "100 mg"
+                        ],
+                        "max_dosage": "100 mg",
+                        "usual_dosage": "50 mg",
+                        "frequency": "Twice a day"
+                    },
+                    "Atenolol": {
+                        "initial_dosage": "25 mg",
+                        "dosage_range": [
+                            "25 mg",
+                            "50 mg",
+                            "100 mg"
+                        ],
+                        "max_dosage": "100 mg",
+                        "usual_dosage": "50 mg",
+                        "frequency": "Twice a day"
+                    },
+                    "Carvedilol": {
+                        "initial_dosage": "3.125 mg",
+                        "dosage_range": [
+                            "3.125 mg",
+                            "6.25 mg",
+                            "12.5 mg",
+                            "25 mg",
+                            "50 mg"
+                        ],
+                        "max_dosage": "50 mg",
+                        "usual_dosage": "12.5 mg",
+                        "frequency": "Twice a day"
+                    }
+                },
+                "considerations": {
+                    "when_to_start": "If poor rate control (HR > 110), symptomatic AF, or rhythm control with class Ic (Flecainide) is used.",
+                    "when_to_adjust": "If already on beta-blocker, increase only one level at a time.",
+                    "when_to_avoid": "Severe asthma, severe COPD, heart rate < 50 in ECG, type II or type III AV block in ECG, average heart rate < 55 in Holter ECG, slow AF in Holter ECG, any symptom during slow AF in Holter ECG. If bisoprolol cannot be given in HFrEF, switch to digoxin."
+                }
+            },
+            "calcium_channel_blocker": {
+                "description": "Second-line option when beta-blockers are contraindicated.",
+                "medications": {
+                    "Diltiazem": {
+                        "initial_dosage": "60 mg",
+                        "dosage_range": [
+                            "60 mg",
+                            "120 mg",
+                            "180 mg",
+                            "240 mg",
+                            "300 mg",
+                            "360 mg"
+                        ],
+                        "max_dosage": "360 mg",
+                        "usual_dosage": "120 mg",
+                        "frequency": "Three times a day or twice a day for elderly"
+                    },
+                    "Verapamil": {
+                        "initial_dosage": "40 mg",
+                        "dosage_range": [
+                            "40 mg",
+                            "80 mg",
+                            "120 mg",
+                            "240 mg",
+                            "480 mg"
+                        ],
+                        "max_dosage": "480 mg",
+                        "usual_dosage": "240 mg",
+                        "frequency": "Twice a day"
+                    }
+                },
+                "considerations": {
+                    "when_to_start": "If beta-blockers are contraindicated.",
+                    "when_to_avoid": "Should NOT be given to patients with LVEF < 41% or history of heart failure. Avoid diltiazem and verapamil in HFrEF."
+                }
+            },
+            "digoxin": {
+                "description": "Third-line option when beta-blockers and CCBs are not suitable.",
+                "medications": {
+                    "Digoxin": {
+                        "initial_dosage": "0.0625 mg",
+                        "dosage_range": [
+                            "0.0625 mg",
+                            "0.125 mg",
+                            "0.25 mg"
+                        ],
+                        "max_dosage": "0.25 mg",
+                        "usual_dosage": "0.125 mg",
+                        "frequency": "Once a day"
+                    }
+                },
+                "considerations": {
+                    "when_to_start": "If beta-blockers and CCBs are contraindicated. If bisoprolol cannot be given in HFrEF, switch to digoxin.",
+                    "when_to_add": "Can be added to beta-blockers or CCBs if patient remains symptomatic despite maximum dosage."
+                }
+            }
+        },
+        "management_guidelines": {
+            "consider_average_heart_rate": "If ECG or Holter is more than two weeks old, use the average heart rate from physical examination as the determining factor.",
+            "continue_current_treatment_if": {
+                "criteria": [
+                    "Good rate control (average HR < 90)",
+                    "Preserved ventricular function (LVEF > 40%)",
+                    "Minimal or no symptoms or rate control not needed"
+                ]
+            },
+            "adjust_or_change_medication_if": {
+                "criteria": [
+                    "Poor rate control (average HR > 110)",
+                    "Highly symptomatic (palpitations with shortness of breath, affecting daily life)",
+                    "Rhythm control with class Ic agents (Propafone, Flecainide)",
+                    "Impaired ventricular function (LVEF < 41%)"
+                ],
+                "actions": [
+                    "Increase beta-blocker dose (one level at a time)",
+                    "Switch to or add a calcium channel blocker if beta-blockers are contraindicated",
+                    "Consider adding Digoxin if both beta-blockers and CCBs are at maximum tolerated doses"
+                ]
+            },
+            "combination_therapy_considerations": {
+                "if_max_dosage_reached_and_still_symptomatic": "Consider adding the next class of medication at the lowest dose."
+            },
+            "medication_dosage_restriction": "GPT should only provide medication dosages listed in this document."
+        }
+    }
+}
