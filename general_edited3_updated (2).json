@@ -1,10 +1,9 @@
 {
     "instructions": {
         "symptom_analysis": {
-            "description": "Use 'palpitation_schema_final.json' and 'shortness_of_breath_schema_final_decision.json' to analyze symptoms and determine whether rate or rhythm control is needed.",
+            "description": "Use 'symptom_decision_schema (1).json' to analyze symptoms and determine whether rate or rhythm control is needed.",
             "sources": [
-                "palpitation_schema_final.json",
-                "shortness_of_breath_schema_final_decision.json"
+                "symptom_decision_schema (1).json"
             ]
         },
         "rate_control": {
@@ -13,7 +12,7 @@
         },
         "rhythm_control": {
             "step_1": {
-                "description": "As the first step for rhythm control, use 'rhythm_control_strategy.json' to guide initial rhythm management when the result of symptom analysis is advising or optimizing rhythm control.",
+                "description": "As the first step for rhythm control, use 'rhythm_control_strategy_edited.json' to guide initial rhythm management when the result of symptom analysis is advising or optimizing rhythm control.",
                 "source": "rhythm_control_strategy_edited.json"
             },
             "step_2": {
@@ -50,15 +49,15 @@
             "urgent_action": "Refer to urgent care immediately."
         },
         "heart_rate_analysis": {
-            "description": "Analyze heart rate based on average heart rate provided by the user, ECG, and Holter ECG findings to determine the real heart rate for management decisions.",
+            "description": "how to choose the real heart rate for management plan decisions between average heart rate provided by the user, ECG, and Holter ECG findings",
             "rules": [
                  {
                     "condition": "If the Holter ECG and ECG date are more than two weeks ago compared to today",
                     "action": "Use the average heart rate provided by the user as the real heart rate for adjusting the medication dosage."
                 },
                {
-                    "condition": "If the Holter ECG and ECG date are whitin two weeks ago",
-                    "action": "calculate the average heart rate as the avergae of the average heart rate provided by the user and heart rate in Holter ECG."
+                    "condition": "If the Holter ECG and ECG date are within two weeks ago",
+                    "action": "calculate the average heart rate as the average of the average heart rate provided by the user and heart rate in Holter ECG."
                 },
                 {
                     "condition": "If the minimum heart rate is lower than 50 bpm and concomitant with dizziness or other symptoms",
@@ -69,15 +68,12 @@
                     "action": "AF catheter ablation should be considered in patients with AF-related bradycardia or sinus pauses on AF termination to improve symptoms and avoid pacemaker implantation. Consider reducing or stopping beta blocker and calcium channel blocker."
                 },
                 {
-                    "condition": "If the average heart rate is more than 110 bpm and the patient is symptomatic when AF heart rate exceeding 110 bpm",
+                    "condition": "If the average heart rate is more than 110 bpm and the patient is symptomatic when AF heart rate exceeds 110 bpm",
                     "action": "Increase or optimize the dosage of rate control therapy. Depending on symptoms, consider rhythm control therapy."
                 }
             ]
         },
-        "final_steps": {
-            "summary": "give an output with structure provided in the Microsoft Word file named 'output'."
-        },
-        "restrictions": {
+         "restrictions": {
             "web_search": "Do not perform any web searches or reference external resources beyond the provided materials.",
             "fetch_article_action": {
                 "description": "You must not search any web address except using the 'fetchArticleInformation' action.",
